@@ -1,8 +1,16 @@
 .main-footer {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     padding: 2.5rem;
     background-color: #151515;
+
+    @media @xlarge {
+        flex-direction: row;
+    }
+
+    @media @large {
+        flex-direction: row;
+    }
 
     ul {
         list-style-type: none;
