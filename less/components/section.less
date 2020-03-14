@@ -6,6 +6,9 @@
   
   .container {
     flex-direction: column;
+    @media @large {
+      flex-direction: row;
+    }
   }
 
   .section-header {
@@ -13,8 +16,17 @@
     margin: 3rem 0;
  
     h4 {
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       margin: 0;
+      
+      @media @xlarge {
+        font-size: 1.5rem;
+      }
+
+      @media @large {
+        font-size: 1.4rem;
+      }
+
     }
   }
 }
@@ -22,36 +34,64 @@
 .jumbotron {
     background-color: #fff;
     .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    .section-header {
       display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column; 
-      text-transform: uppercase;
+      flex-direction: column;
+
+      @media @xlarge {
+        justify-content: center;
+        align-items: center;
+      }
+
+      @media @large {
+        justify-content: center;
+        align-items: center;
+      }
+
+      .section-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; 
+        text-transform: uppercase;
 
       h4 {
         margin: 1rem;
       }
 
       .hero {
-        font-size: 4.1rem;
+        font-size: 3.2rem;
         font-weight: 700;
         margin: 0;
+
+        @media @large {
+          font-size: 4.1rem;
+        }
+
+        @media @xlarge {
+          font-size: 5.1rem;
+        }
       }
     }
   }
 }
 
 .orange {
-  color: #ff6600;
+  color: @orange;
 }
 
 .article-teaser {
-  .container {
+  display: flex;
+  flex-direction: column;
+
+  @media @xlarge {
+    flex-direction: row;
+  }
+
+  @media @large {
+    flex-direction: row;
+  }
+
+  .block-wrapper {
     display: flex;
     flex-direction: row;
     margin-bottom: 10rem;
@@ -75,16 +115,37 @@
   
 }
 
-.image-overlap {
-  position: absolute;
-  display: flex;
-  flex-direction: row;
-  top: 500px;
-  left: 5%;  
+.image-overlap {  
+    display: none;
+  
+  @media @large {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    flex-direction: row;
+    top: 500px;
+    left: 5%;
+  }
+
+  @media @xlarge {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    flex-direction: row;
+    top: 500px;
+    left: 5%;
+  }
 }
 
 .featured-product {
- padding: 30rem 0 5rem;
+
+  @media @xlarge {
+      padding: 30rem 0 5rem;
+  }
+
+  @media @large {
+    padding: 30rem 0 5rem;
+  }
 
   .container {
     flex-direction: column;

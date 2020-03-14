@@ -1,11 +1,3 @@
-.btn-mixin {
-  padding: 5px 20px;
-  background: green;
-  color: white;
-  border: 1px solid #000;
-  border-radius: 10px;
-  text-transform: uppercase;
-}
 .html {
   font-size: 62.5%;
 }
@@ -37,21 +29,47 @@
 .jumbotron.top .container {
   flex-direction: column;
 }
+@media screen and (min-width:  981px) and (max-width: 1280px   ) {
+  .jumbotron.top .container {
+    flex-direction: row;
+  }
+}
 .jumbotron.top .section-header {
   color: #fff;
   margin: 3rem 0;
 }
 .jumbotron.top .section-header h4 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin: 0;
+}
+@media screen and (min-width: 1281px) and (max-width: 1680px   ) {
+  .jumbotron.top .section-header h4 {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width:  981px) and (max-width: 1280px   ) {
+  .jumbotron.top .section-header h4 {
+    font-size: 1.4rem;
+  }
 }
 .jumbotron {
   background-color: #fff;
 }
 .jumbotron .container {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+}
+@media screen and (min-width: 1281px) and (max-width: 1680px   ) {
+  .jumbotron .container {
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (min-width:  981px) and (max-width: 1280px   ) {
+  .jumbotron .container {
+    justify-content: center;
+    align-items: center;
+  }
 }
 .jumbotron .container .section-header {
   display: flex;
@@ -64,14 +82,38 @@
   margin: 1rem;
 }
 .jumbotron .container .section-header .hero {
-  font-size: 4.1rem;
+  font-size: 3.2rem;
   font-weight: 700;
   margin: 0;
+}
+@media screen and (min-width:  981px) and (max-width: 1280px   ) {
+  .jumbotron .container .section-header .hero {
+    font-size: 4.1rem;
+  }
+}
+@media screen and (min-width: 1281px) and (max-width: 1680px   ) {
+  .jumbotron .container .section-header .hero {
+    font-size: 5.1rem;
+  }
 }
 .orange {
   color: #ff6600;
 }
-.article-teaser .container {
+.article-teaser {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 1281px) and (max-width: 1680px   ) {
+  .article-teaser {
+    flex-direction: row;
+  }
+}
+@media screen and (min-width:  981px) and (max-width: 1280px   ) {
+  .article-teaser {
+    flex-direction: row;
+  }
+}
+.article-teaser .block-wrapper {
   display: flex;
   flex-direction: row;
   margin-bottom: 10rem;
@@ -91,14 +133,37 @@
   padding: 1.5rem;
 }
 .image-overlap {
-  position: absolute;
-  display: flex;
-  flex-direction: row;
-  top: 500px;
-  left: 5%;
+  display: none;
 }
-.featured-product {
-  padding: 30rem 0 5rem;
+@media screen and (min-width:  981px) and (max-width: 1280px   ) {
+  .image-overlap {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    flex-direction: row;
+    top: 500px;
+    left: 5%;
+  }
+}
+@media screen and (min-width: 1281px) and (max-width: 1680px   ) {
+  .image-overlap {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    flex-direction: row;
+    top: 500px;
+    left: 5%;
+  }
+}
+@media screen and (min-width: 1281px) and (max-width: 1680px   ) {
+  .featured-product {
+    padding: 30rem 0 5rem;
+  }
+}
+@media screen and (min-width:  981px) and (max-width: 1280px   ) {
+  .featured-product {
+    padding: 30rem 0 5rem;
+  }
 }
 .featured-product .container {
   flex-direction: column;
@@ -110,6 +175,7 @@
   margin: 1rem 0;
 }
 .button {
+  display: inline-block;
   margin: 0 1rem;
   padding: 1.5rem;
   text-transform: uppercase;
@@ -137,6 +203,34 @@
   flex-direction: row;
   align-items: center;
   padding: 3rem 0 3rem 4rem;
+}
+.main-header .hamburger-menu {
+  font-size: 1.6rem;
+  color: #fff !important;
+  cursor: pointer;
+}
+@media screen and (min-width: 1281px) and (max-width: 1680px   ) {
+  .main-header .hamburger-menu {
+    display: none;
+  }
+}
+@media screen and (min-width:  981px) and (max-width: 1280px   ) {
+  .main-header .hamburger-menu {
+    display: none;
+  }
+}
+.main-header .main-nav {
+  display: none;
+}
+@media screen and (min-width: 1281px) and (max-width: 1680px   ) {
+  .main-header .main-nav {
+    display: inline-block;
+  }
+}
+@media screen and (min-width:  981px) and (max-width: 1280px   ) {
+  .main-header .main-nav {
+    display: inline-block;
+  }
 }
 .main-header nav a {
   margin: 0 1rem;

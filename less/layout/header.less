@@ -8,6 +8,33 @@
     align-items: center;
     padding: 3rem 0 3rem 4rem;
 
+    .hamburger-menu {
+      font-size: 1.6rem;
+      color: #fff!important;
+      cursor: pointer;
+
+      @media @xlarge {
+        display: none;
+      }
+
+      @media @large {
+        display: none;
+      }
+
+    }
+
+    .main-nav {
+      display: none;
+
+      @media @xlarge {
+        display: inline-block;
+      }
+
+      @media @large {
+        display: inline-block;
+      }
+    }
+
     nav a {
       margin: 0 1rem;
       font-family: 'Libre Franklin';
@@ -15,7 +42,7 @@
       text-decoration: none;
       color: #fff;
       font-weight: 600;
-      font-size: 1rem;
+      font-size: 1rem;      
     }
 
     .icon-link {
@@ -29,14 +56,14 @@
     }
 
     .header-logo {
-        position: absolute;
-        top: 0;
-        right: 5rem;
-        padding: 1rem 2rem 2rem;
-        font-size: 3.4rem;
-        font-weight: 600;
-        color: #000;
-        background: #ff6600;
+      position: absolute;
+      top: 0;
+      right: 5rem;
+      padding: 1rem 2rem 2rem;
+      font-size: 3.4rem;
+      font-weight: 600;
+      color: #000;
+      background: #ff6600;
     }
 
     .header-logo img {
