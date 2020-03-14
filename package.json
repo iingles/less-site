@@ -1,0 +1,22 @@
+{
+  "name": "less-css-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iingles/DGM-2780-Bootstrap-Starter.git"
+  },
+  "author": "Isaac Ingles",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iingles/DGM-2780-Bootstrap-Starter/issues"
+  },
+  "homepage": "https://github.com/iingles/DGM-2780-Bootstrap-Starter#readme",
+  "dependencies": {
+    "less-watch-compiler": "^1.14.6"
+  }
+}

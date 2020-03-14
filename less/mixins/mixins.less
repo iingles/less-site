@@ -1,0 +1,15 @@
+.btn-mixin(@bg-color, @font-color) {
+ display: inline-block;
+ padding: 5px 20px;
+ background: @bg-color;
+ color: @font-color;
+ border: 1px solid #000;
+ border-radius: 10px;
+ text-transform: uppercase;
+
+    &:hover {
+        background: white;
+        color: green;
+    }
+}
+
