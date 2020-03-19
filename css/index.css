@@ -41,6 +41,19 @@
 /*
   Custom Styles
 */
+.mobile-menu {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+  opacity: 0.75;
+  z-index: 1;
+}
 .jumbotron.top {
   background: url("../images/man-bike.jpg") no-repeat;
   height: 100vh;
