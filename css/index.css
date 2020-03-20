@@ -90,7 +90,6 @@
 .products {
   padding-top: 10rem;
   background: #fff;
-  height: 100vh;
   display: flex;
   flex-direction: column;
 }
@@ -103,6 +102,11 @@
   .products {
     flex-direction: row;
   }
+}
+.product-info table th,
+.product-info table td {
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid #ccc;
 }
 .jumbotron {
   background-color: #fff;
