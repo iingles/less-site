@@ -87,6 +87,23 @@
     font-size: 1.4rem;
   }
 }
+.products {
+  padding-top: 10rem;
+  background: #fff;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 1281px) and (max-width: 1680px   ) {
+  .products {
+    flex-direction: row;
+  }
+}
+@media screen and (min-width:  981px) and (max-width: 1280px   ) {
+  .products {
+    flex-direction: row;
+  }
+}
 .jumbotron {
   background-color: #fff;
 }
@@ -302,6 +319,9 @@
 }
 .main-header .header-logo img {
   width: 4rem;
+}
+.bikes .main-header {
+  background: #000;
 }
 .main-footer {
   padding: 2.5rem;
