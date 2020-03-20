@@ -103,6 +103,19 @@
     flex-direction: row;
   }
 }
+.product-info {
+  margin-top: 2.5rem;
+}
+@media screen and (min-width: 1281px) and (max-width: 1680px   ) {
+  .product-info {
+    margin: 0 0 0 2.5rem;
+  }
+}
+@media screen and (min-width:  981px) and (max-width: 1280px   ) {
+  .product-info {
+    margin: 0 0 0 2rem;
+  }
+}
 .product-info table th,
 .product-info table td {
   padding: 1rem 1.5rem;
